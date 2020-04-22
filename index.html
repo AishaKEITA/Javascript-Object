@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>object2</title>
+</head>
+
+<body>
+    <script src="script.js">
+        // let colors= ['red', 'blue', 'green', 'yellow']
+        // // splice(index, deleteCount, item1, item2 ...)
+        // color.splice(colors.indexOf('blue'), 1, 'green);
+
+        // // for-of
+        // //for (let item of )
+
+        // // for 
+        // // there are three ways to loop through arrays you have it
+        // // phone write it down 
+
+
+        // //study map functions aisha
+        //We will start with the array functions exercises :sparkles: You will have 40 minutes :wink:
+        // 1. Suppose we have an array of people.
+        // let people = ["Mary", "Greg", "Jane", "James"];
+        // Using the splice() function, remove “Jane” from the array and add “Elizabeth” and “Artie”.  Then the array should look like this [“Mary”, “Greg”, “Elizabeth”, “Artie”, “James”].
+
+        // let people = ['Mary', 'Greg', 'Jane', 'James'];
+        // people.splice(people.indexOf('Jane'), 1, 'Elizabeth','Artie');
+        // console.log(people);
+
+        //2. Suppose we have an array of objects.
+        // books = [
+        //   {
+        //     author: 'Bill Gates',
+        //     title: 'The Road Ahead',
+        //   },
+        //   {
+        //     author: 'Steve Jobs',
+        //     title: 'Walter Isaacson',
+        //   }
+        // ];
+        // Using forEach() function, print each element to the webpage in the following way:
+        // 1. Book ‘The Road Ahead’ is written by ‘Bill Gates’
+        // 2. Book ‘Walter Isaacson’ is written by ‘Steve Jobs’
+
+        // let books = [
+        //   {
+        //     author: 'Bill Gates',
+        //     title: 'The Road Ahead',
+        //   },
+        //   {
+        //     author: 'Steve Jobs',
+        //     title: 'Walter Isaacson',
+        //   }
+        // ];
+
+        // let book2 = books.map(function (books, index, array){
+        //     let newObject = {
+        //         string: `${books.title} is written by ${books.author}`
+        //     };
+        //     console.log(newObject);
+        //     return newObject;
+
+        // })
+
+        // 3. Suppose we have an array of numbers.
+        // let numbers = [112, -20, 52, 0, -1, 944];
+        // Using filter() function, create a new array consisting only positive numbers.
+        // 
+        // let number = [112, -20, 52, 0, -1, 944];
+        // let number2 = number.filter (function(item){
+        //     return item > 0;
+        // });
+        // console.log(number2);
+        //    
+
+        // 4. Suppose we have an array of objects.
+        // let keyValueArray = [
+        //   {
+        //     key: 'name',
+        //     value: 'James'
+        //   },
+        //   {
+        //     key: 'age',
+        //     value: 27
+        //   },
+        //   {
+        //     key: 'surname',
+        //     value: 'Doe'
+        //   }
+        // ];
+        // Using map() function, create a new array consisting reformatted objects
+        // like this:
+        // [
+        //   {
+        //     name: 'James'
+        //   },
+        //   {
+        //     age: 27
+        //   },
+        //   {
+        //     surname: 'Doe'
+        //   }
+        // ]
+
+
+        // let keyValueArray = [
+        //   {
+        //     key: 'name',
+        //     value: 'James'
+        //   },
+        //   {
+        //     key: 'age',
+        //     value: 27
+        //   },
+        //   {
+        //     key: 'surname',
+        //     value: 'Doe'
+        //   }
+        // ];
+        // var reformatkeyVaule = function (persons){
+        //     return  persons.map (function (person){
+        //         var newObj = {};
+        //         newObj ['key']
+        //     })
+        // }
+
+        //constructors
+
+        // let person1 = {
+        //     name: 'jane',
+        //     lastname: 'word',
+        //     isOnline: false
+        // };
+        // let person2 = {
+        //     name: 'Bob',
+        //     lastname: 'Doe',
+        //     isOnline: true
+        // };
+        // // //you must us capital letter for construtors
+        // function Person(name, lastname, isOnline) {
+        //     this.name = name;
+        //     this.lastname = lastname;
+        //     this.isOnline = isOnline;
+        //     this.age = 25;
+
+        //     this.displayFullname = function () {
+        //         console.log(`${this.name} ${this.lastname}`);
+
+        //     } //using display will display the full name
+        // }
+
+        // //to create a new person
+        // let person3 = new Person('Alex', 'Doe', true);
+        // let person4 = new Person('Dan', 'Doe', false);
+        // console.log(person4);
+        // person3.displayFullname();
+        // // person3.displayFullname(); //you can call the full name here like this this will create the same object and is online property will be true
+
+        // let people = [];
+        // for (let i = 0; i < 10; i++) {
+        //     people.push(new Person('Alex', 'Doe', true))
+        // }
+        // console.log(people);
+        // // this will print 10 elements with the same
+
+        //Destructuring as function
+        // let name = 'Jane Doe';
+        // //now let say we want to split this string
+        // name.split('' ); //that a way to split it
+        // //if you want to destructure
+        // // let firsname = name.split(' ')[0];
+        // // let firsname = name.split(' ')[1];
+
+
+        //or desconstruct properly like this
+        // let  [firstname, lastname] = name.split(' ')
+        // console.log(firstname);
+        // console.log(lastname);
+
+        // //destructuring is useful for unpacking values from objects but you have to use curly bracesfor example:
+
+        // let userObject = {
+        //     nickname: 'cake',
+        //     isOnline: false
+        // };
+        // let {nickname, isOnline} = userObject;
+
+        //there is something call rest operators for example Create a constructor function called Video. The function should accept arguments of title (a string), uploader (a string, the person who uploaded it), and seconds (a number, the duration), and it should save them as properties of the object. Create a method of the Video constructor called watch() which should log a string to the console like “You watched all 1800 seconds of Walking with Dinosaurs!” Create a new object using the Video constructor and call the watch() method of it.
+
+        // function Vedio(title, uploader, second) {
+        //     this.title = title;
+        //     this.uploader = uploader;
+        //     this.second = second;
+        //     this.watch = function () {
+        //         console.log(`${this.second}${this.title}`)
+        //     }
+        // }
+        // let vedio = new Vedio('You watched all 1800 seconds of Walking with Dinosaurs!');
+        // vedio.watch();
+    </script>
+</body>
+
+</html>
